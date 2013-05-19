@@ -1,4 +1,4 @@
-# TableFormatterSimple [![Build Status](https://travis-ci.org/SpringMT/table_formatter_simple)](https://travis-ci.org/SpringMT/table_formatter_simple)
+# TableFormatterSimple [![Build Status](https://travis-ci.org/SpringMT/table_formatter_simple.png)](https://travis-ci.org/SpringMT/table_formatter_simple)
 
 Format a table in Teminal.
 
