@@ -13,7 +13,7 @@ class TableFormatterSimple
 
     data.each do |d|
       d.keys.each do |k|
-        data2hash[k] ||= []
+        data2hash[k] ||= [k]
         data2hash[k] << d[k]
       end
     end

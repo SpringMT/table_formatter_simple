@@ -47,6 +47,37 @@ TABLE
       end
     end
 
+    context 'valid all' do
+      subject { TableFormatterSimple.new.to_table([{foo: 1, bar: 1}, {foo: 2, bar: 2}]) }
+      it do
+        should eql(<<"TABLE")
++-----+-----+
+| foo | bar |
++-----+-----+
+| 1   | 1   |
+| 2   | 2   |
++-----+-----+
+TABLE
+      end
+    end
+
+    context 'valid Japanese' do
+      pending do
+      subject { TableFormatterSimple.new.to_table([{foo: 'あああ', bar: 'bbbb'}, {foo: 'ccc', bar: 'dddd'}]) }
+      it do
+        should eql(<<"TABLE")
++--------+------+
+| foo    | bar  |
++--------+------+
+| あああ | bbbb |
+| ccc    | dddd |
++--------+------+
+TABLE
+      end
+      end
+    end
+
+
   end
 end
 
