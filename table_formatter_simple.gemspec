@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "table_formatter_simple"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["SpringMT"]
   spec.email         = ["today.is.sky.blue.sky@gmail.com"]
   spec.summary       = %q{Format a table in Teminal}
